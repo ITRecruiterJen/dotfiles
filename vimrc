@@ -21,16 +21,16 @@ set rtp+=~/.vim/vundle
 call vundle#begin('~/.vim/bundle')
 Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'mileszs/ack.vim'
-Plugin 'kien/ctrlp.vim'
+" Plugin 'mileszs/ack.vim'
+" Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-vinegar'
+" Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'maxbrunsfeld/vim-yankstack'
@@ -40,8 +40,8 @@ Plugin 'kana/vim-textobj-entire'
 
 " Plugin 'sheerun/vim-polyglot' " has unfortunate side effects (vue syntax highlight broken, css indent wierd)
 Plugin 'vim-ruby/vim-ruby'      " ... so load favorite language packs individually instead
-Plugin 'fatih/vim-go'
-Plugin 'posva/vim-vue'
+" Plugin 'fatih/vim-go'
+" Plugin 'posva/vim-vue'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'pangloss/vim-javascript'
@@ -116,7 +116,7 @@ command EditBash :edit   ~/.bashrc
 " Leaders
 " =======
 
-nnoremap <Leader>a :Ack<Space>
+" nnoremap <Leader>a :Ack<Space>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :NERDTreeToggle<CR>
 nnoremap <Leader>g :TagbarToggle<CR>
