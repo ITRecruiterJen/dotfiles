@@ -46,59 +46,6 @@ prepend_path() {
 }
 
 #==============================================================================
-# ANDROID
-#==============================================================================
-
-if [ -d "$HOME/android" ]; then
-  append_path "$HOME/android/tools"
-  append_path "$HOME/android/platform-tools"
-fi
-
-#==============================================================================
-# GO
-#==============================================================================
-
-if [ -d "$HOME/go" ]; then
-  export GOPATH=$HOME/go
-  append_path "$GOPATH/bin"
-fi
-
-if [ -d "/usr/local/go" ]; then
-  append_path "/usr/local/go/bin"
-fi
-
-#==============================================================================
-# AWS ENVIRONMENT
-#==============================================================================
-
-if [ -d "$HOME/.aws" ]; then
-  if [ -e "$HOME/.aws/aws_access_key" ]; then
-    export AWS_ACCESS_KEY=`cat $HOME/.aws/aws_access_key`
-  fi
-  if [ -e "$HOME/.aws/aws_secret_key" ]; then
-    export AWS_SECRET_KEY=`cat $HOME/.aws/aws_secret_key`
-  fi
-fi
-
-#==============================================================================
-# DIGITAL OCEAN ENVIRONMENT
-#==============================================================================
-
-if [ -d "$HOME/.digitalocean" ]; then
-  if [ -e "$HOME/.digitalocean/do_access_token" ]; then
-    export DO_ACCESS_TOKEN=`cat $HOME/.digitalocean/do_access_token`
-  fi
-  if [ -e "$HOME/.digitalocean/do_client_id" ]; then
-    export DO_CLIENT_ID=`cat $HOME/.digitalocean/do_client_id`
-  fi
-  if [ -e "$HOME/.digitalocean/do_api_key" ]; then
-    export DO_API_KEY=`cat $HOME/.digitalocean/do_api_key`
-  fi
-fi
-
-#==============================================================================
-# BUNDLER/RUBY HELPERS
-#==============================================================================
 
 alias bi='bundle install'
 alias be='bundle exec'
@@ -133,22 +80,16 @@ alias gp='git pull --ff-only'
 alias gf='git fetch'
 alias gc='git reset --hard'
 
-alias hgs='hg status'
-alias hgb='hg branches -a'
-alias hgl='hg log'
-alias hgr='hg recent'
-alias hgd='hg diff'
-alias hgp='hg pull && hg update'
 
 #==============================================================================
 # MAKE HELPERS
 #==============================================================================
 
-alias mt='make test'
-alias mr='make run'
-alias md='make deps'
-alias mi='make install'
-alias mw='make watch'
+# alias mt='make test'
+# alias mr='make run'
+# alias md='make deps'
+# alias mi='make install'
+# alias mw='make watch'
 
 #==============================================================================
 # NODE HELPERS
@@ -189,14 +130,14 @@ dobserve() {
 # PYTHON HELPERS
 #==============================================================================
 
-alias pss='python -m SimpleHTTPServer'
+# alias pss='python -m SimpleHTTPServer'
 
 #==============================================================================
 # KUBERNETES HELPERS
 #==============================================================================
 
-alias kc='kubectl'
-alias kcs='kubectl --namespace=kube-system'
+# alias kc='kubectl'
+# alias kcs='kubectl --namespace=kube-system'
 
 #==============================================================================
 # OTHER ALIASES
@@ -264,8 +205,8 @@ services() {
 #==============================================================================
 # BUILDING DEBIAN PACKAGES (http://packaging.ubuntu.com/html/getting-set-up.html#configure-your-shell)
 #==============================================================================
-export DEBFULLNAME="Jake Gordon"
-export DEBEMAIL="jake@codeincomplete.com"
+export DEBFULLNAME="Jesse James"
+export DEBEMAIL="jjames@workwithopal.com"
 
 #==============================================================================
 
